@@ -17,6 +17,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.rotate
+import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -552,5 +553,5 @@ private fun threatColor(level: HiddenThreatLevel): Color = when (level) {
     HiddenThreatLevel.DANGEROUS     -> DangerRed
 }
 
-private fun androidx.compose.ui.Modifier.scale(scale: Float) =
+// removed duplicate scale
     this.then(androidx.compose.ui.draw.scale(scale))
