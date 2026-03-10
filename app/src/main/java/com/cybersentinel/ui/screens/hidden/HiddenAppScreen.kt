@@ -551,3 +551,4 @@ private fun threatColor(level: HiddenThreatLevel): Color = when (level) {
     HiddenThreatLevel.SUSPICIOUS    -> WarningAmber
     HiddenThreatLevel.LIKELY_HIDDEN -> NeonPurple
     HiddenThreatLevel.DANGEROUS     -> DangerRed
+}
