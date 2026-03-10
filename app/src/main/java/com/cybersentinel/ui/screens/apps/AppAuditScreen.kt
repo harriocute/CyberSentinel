@@ -17,6 +17,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.scale
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
@@ -540,6 +541,3 @@ private fun appRiskColor(level: AppRiskLevel): Color = when (level) {
     AppRiskLevel.HIGH     -> Color(0xFFFF6B35)
     AppRiskLevel.CRITICAL -> DangerRed
 }
-
-// Kotlin extension to allow scale modifier inline (mirrors WifiScannerScreen usage)
-private fun androidx.compose.ui.Modifier.scale(scale: Float) =
